@@ -308,6 +308,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -433,6 +434,20 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a08c12783738441b7f7e620a080bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 540286490}
+  transitionSpeed: 4
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,8 +582,9 @@ GameObject:
   - component: {fileID: 540286492}
   - component: {fileID: 540286493}
   - component: {fileID: 540286494}
+  - component: {fileID: 540286495}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,6 +765,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 367a759df75e1484db8d239be5549afd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &540286495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540286486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d056e0222956b8e4998f408c07081da9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 5
 --- !u!1 &582278451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1277,12 @@ PrefabInstance:
     - target: {fileID: 4427923760426313401, guid: 355dcfebfb2996540971fc9e88e0499d,
         type: 3}
       propertyPath: m_Name
-      value: Cube (8)
+      value: trap
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427923760426313401, guid: 355dcfebfb2996540971fc9e88e0499d,
+        type: 3}
+      propertyPath: m_TagString
+      value: trap
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1454,8 +1488,8 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
   - {fileID: 410087041}
+  - {fileID: 330585546}
   - {fileID: 832575519}
   - {fileID: 917724672}
   - {fileID: 540286490}
