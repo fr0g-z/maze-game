@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     //xyz cordinates 
     public Vector3 direction;
+    public Rigidbody playerRb;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,9 @@ public class PlayerMovement : MonoBehaviour
         //the dot is there to access a functionality of transform
         //translate means move 
 
-        transform.Translate(direction * Time.deltaTime * speed);
+        // transform.Translate(direction * Time.deltaTime * speed);
+
+        playerRb.velocity = direction * speed;
 
     }
     private void OnMove(InputValue value)
