@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collectable
   - trap
+  - checkpoint
   layers:
   - Default
   - TransparentFX
