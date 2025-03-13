@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
     public int points = 5;
     public Vector3 respawnPosition;
     public TMP_Text healthText;
-
+    public GameObject gameOverScreen;
 
     private void Start()
     {
@@ -43,8 +43,7 @@ public class Health : MonoBehaviour
 
         if (points < 1)
         {
-           
-         
+           gameOverScreen.SetActive(true);
             
             Destroy(gameObject);
            
