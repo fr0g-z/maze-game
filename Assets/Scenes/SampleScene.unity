@@ -983,7 +983,7 @@ MonoBehaviour:
   points: 5
   respawnPosition: {x: 0, y: 0, z: 0}
   healthText: {fileID: 193996735}
-  gameOverScreen: {fileID: 616683572}
+  gameOverScreen: {fileID: 616683577}
 --- !u!1 &582278451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,13 +1100,15 @@ GameObject:
   - component: {fileID: 616683573}
   - component: {fileID: 616683575}
   - component: {fileID: 616683574}
+  - component: {fileID: 616683576}
+  - component: {fileID: 616683577}
   m_Layer: 5
   m_Name: LOLyoudied
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &616683573
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1165,6 +1167,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616683572}
   m_CullTransparentMesh: 1
+--- !u!225 &616683576
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616683572}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &616683577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616683572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15624de31ef90a54e8fbfad7b54428fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 616683576}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
