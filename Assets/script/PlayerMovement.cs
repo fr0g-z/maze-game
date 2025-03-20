@@ -32,11 +32,11 @@ public class PlayerMovement : MonoBehaviour
 
 
         Vector3 velocity = direction * speed;
-        velocity.y = playerRb.velocity.y;
+        velocity.y = playerRb.linearVelocity.y;
        
         
         
-        playerRb.velocity = velocity;
+        playerRb.linearVelocity = velocity;
 
     }
     private void OnMove(InputValue value)

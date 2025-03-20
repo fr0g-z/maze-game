@@ -20,6 +20,10 @@ public class Health : MonoBehaviour
         {
             Damage(1);
         }
+        if (other.CompareTag("Fireball"))
+        {
+            Damage(2);
+        }
         if (other.CompareTag("checkpoint"))
         {
             respawnPosition = transform.position;
