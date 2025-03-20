@@ -7,6 +7,7 @@ TagManager:
   - Collectable
   - trap
   - checkpoint
+  - Fireball
   layers:
   - Default
   - TransparentFX
